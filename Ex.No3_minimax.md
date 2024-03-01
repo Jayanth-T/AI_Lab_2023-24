@@ -42,6 +42,7 @@ print(minimax(0, 0, True, scores, treeDepth))
 
 
 ### Output:
+![image](https://github.com/Jayanth-T/AI_Lab_2023-24/blob/main/Screenshot%202024-03-01%20125130.png)
 
 
 
