@@ -34,10 +34,17 @@ Consider the following facts and represent them in predicate form: <br>
 Convert the facts in predicate form to clauses and then prove by resolution: “Steve likes BK301 course”<br> 
 
 ### Program:
-
+```
+likes(steve, easy_courses).
+likes(_, have_fun_courses).  % Everyone likes courses in Have fun department
+hard(science_courses).
+have_fun_course(bk301).
+likes(steve, Course) :-
+    have_fun_course(Course).
+```
 
 ### Output:
-
+![image](https://github.com/Jayanth-T/AI_Lab_2023-24/blob/main/Screenshot%202024-03-09%20161053.png)
 ### Task 3:
 Consider the statement <br> 
 “This is a crime for an American to sell weapons to hostile nations. The Nano , enemy of America has some missiles and its missiles were sold it by Colonal West who is an American” <br> 
