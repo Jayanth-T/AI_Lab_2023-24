@@ -1,12 +1,63 @@
 # Ex.No: 10 Learning – Use Supervised Learning  
 ### DATE:                                                                            
-### REGISTER NUMBER : 
+### REGISTER NUMBER : 212221060097
 ### AIM: 
 To write a program to train the classifier for -----------------.
 ###  Algorithm:
 
 ### Program:
+```
+import random
 
+# Dictionary of predefined responses
+responses = {
+    "features": ["Our product offers a range of features including X, Y, and Z.",
+                 "You'll find features such as A, B, and C in our product.",
+                 "Our product is equipped with features like P, Q, and R."
+                ],
+    "pricing": ["For detailed pricing information, please visit our website.",
+                "Our pricing varies based on the package you choose. Would you like more information?",
+                "We offer competitive pricing. You can find more details on our website."
+               ],
+    "availability": ["Our product is currently available in most regions.",
+                     "We strive to maintain product availability across different locations.",
+                     "You can check the availability of our product on our website."
+                    ],
+    "support": ["For customer support, please reach out to our dedicated team.",
+                "We provide 24/7 customer support via phone and email.",
+                "Our customer support team is ready to assist you with any queries you may have."
+               ]
+}
+
+# Function to handle user queries
+def chatbot(query):
+    if "features" in query:
+        return random.choice(responses["features"])
+    elif "pricing" in query:
+        return random.choice(responses["pricing"])
+    elif "availability" in query:
+        return random.choice(responses["availability"])
+    elif "support" in query:
+        return random.choice(responses["support"])
+    else:
+        return "I'm sorry, I didn't understand that. Could you please be more specific?"
+
+# Main function
+def main():
+    print("Welcome to the Customer Service Chatbot!")
+    print("How can I assist you today?")
+    while True:
+        user_query = input("User: ").lower()
+        if user_query == "exit":
+            print("Thank you for using our service. Goodbye!")
+            break
+        else:
+            response = chatbot(user_query)
+            print("Chatbot:", response)
+
+if __name__ == "__main__":
+    main()
+```
 
 ### Output:
 
