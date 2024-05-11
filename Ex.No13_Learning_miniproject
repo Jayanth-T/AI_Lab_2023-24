@@ -2,9 +2,13 @@
 ### DATE:                                                                            
 ### REGISTER NUMBER : 212221060097
 ### AIM: 
-To write a program to train the classifier for -----------------.
+To develop a text-based chatbot that assists users with common queries related to a fictitious product or service.
 ###  Algorithm:
-
+1. Designing the Chatbot
+2. Defining User Queries
+3. Developing Responses
+4. Implementing Natural Language Processing
+5. Testing
 ### Program:
 ```
 import random
